@@ -5,7 +5,9 @@ export default function Footer() {
     <footer className="w-11/12 m-auto mt-8 mb-4 px-16 py-8 bg-stone-100 rounded-lg">
       <div className="grid grid-cols-4">
         <div>
-          <h4 className="font-bold text-2xl tracking-wider">Genres</h4>
+          <h4 className="font-bold text-2xl text-[#1F2544] tracking-wider">
+            Genres
+          </h4>
           <ul className="tracking-widest text-lg text-gray-700">
             <li>Comedy</li>
             <li>Drama</li>
@@ -14,7 +16,9 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-2xl tracking-wider">Links</h4>
+          <h4 className="font-bold text-2xl text-[#1F2544] tracking-wider">
+            Links
+          </h4>
           <ul className="tracking-widest text-lg text-gray-700">
             <li>Login</li>
             <li>Register</li>
@@ -23,7 +27,9 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-2xl tracking-wider">Browse All</h4>
+          <h4 className="font-bold text-2xl text-[#1F2544] tracking-wider">
+            Browse All
+          </h4>
           <ul className="tracking-widest text-lg text-gray-700">
             <li>Now Showing</li>
             <li>Coming Soon</li>
@@ -32,7 +38,9 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-2xl tracking-wider">Enquiry</h4>
+          <h4 className="font-bold text-2xl text-[#1F2544] tracking-wider">
+            Enquiry
+          </h4>
           <span className="tracking-widest text-lg text-gray-700">
             Support Service
             <br />

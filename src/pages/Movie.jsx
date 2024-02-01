@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import BookTicketModal from "../component/BookTicketModal";
 
 export default function Movie() {
   const { id } = useParams();
@@ -51,9 +52,7 @@ export default function Movie() {
             <span className="text-lg">
               Runtime &nbsp; {movie?.runtime}mins.
             </span>
-            <button className="bg-[#1F2544] text-xl text-stone-100 py-2 px-8 tracking-widest ">
-              Book Ticket
-            </button>
+            <BookTicketModal movie={movie} />
           </div>
         </div>
         <div className="w-[1px] bg-slate-500 h-80"></div>
