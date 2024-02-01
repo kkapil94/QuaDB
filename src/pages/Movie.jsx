@@ -16,13 +16,13 @@ export default function Movie() {
   }, []);
 
   return (
-    <div className="w-11/12 m-auto bg-stone-100 mt-10 py-8 rounded-lg">
-      <div className="flex items-center justify-between gap-12">
-        <div className="flex items-center px-16 gap-16 my-8">
-          <div>
+    <div className="w-11/12 m-auto bg-stone-100 mt-10 xs:max-lg:py-0 py-8 rounded-lg">
+      <div className="flex xs:max-lg:flex-col items-center justify-between xs:max-lg:gap-4 gap-12">
+        <div className="flex xs:max-lg:flex-col xs:max-lg:px-4 px-16 xs:max-lg:gap-8 gap-16 my-8">
+          <div className="w-full">
             <span>
               <img
-                className="w-64"
+                className="min-w-64 "
                 src={
                   movie?.image?.medium ? movie?.image?.medium : "/img/empty.png"
                 }
@@ -30,8 +30,8 @@ export default function Movie() {
               />
             </span>
           </div>
-          <div className="flex flex-col gap-6">
-            <span className="text-4xl text-[#4c3336] tracking-wider font-semibold ">
+          <div className="flex xs:max-lg:w-full flex-col xs:max-lg:gap-3 gap-6">
+            <span className="text-4xl xs:max-lg:text-2xl text-[#4c3336] tracking-wider font-semibold ">
               {movie?.name}
             </span>
             <span className="flex items-center justify-center text-xl bg-slate-800 text-gray-100 rounded-xl">
@@ -55,28 +55,30 @@ export default function Movie() {
             <BookTicketModal movie={movie} />
           </div>
         </div>
-        <div className="w-[1px] bg-slate-500 h-80"></div>
-        <div className="w-[25rem] mr-20 flex flex-col justify-center">
+        <div className="w-[1px] xs:max-lg:hidden bg-slate-500 lg:max-2xl:h-80"></div>
+        <div className="lg:max-2xl:w-[25rem]  xs:max-lg:px-4 lg:max-2xl:mr-20 flex flex-col justify-center">
           <div className="mb-8 ">
-            <h2 className="text-3xl font-bold tracking-wider text-[#4c3336]">
+            <h2 className="text-3xl xs:max-lg:text-xl font-bold tracking-wider text-[#4c3336]">
               Summary
             </h2>
-            <p className="text-lg tracking-wide">
-              {movie?.summary?.replace(/(<([^>]+)>)/gi, "")}
+            <p className="text-lg xs:max-lg:text-sm tracking-wide">
+              {movie?.summary?.replace(/(<([^>]+)>)/gi, "")?.substring(0, 300)}
             </p>
           </div>
           <div className="w-full h-[1px] bg-slate-500"></div>
-          <div className="text-lg tracking-wider mt-8">
-            <h2 className="text-3xl text-[#4c3336] font-bold tracking-wider mb-4">
+          <div className="text-lg tracking-wider xs:max-md:mt-4 mt-8">
+            <h2 className="text-3xl xs:max-lg:text-xl  text-[#4c3336] font-bold tracking-wider xs:max-md:mb-1 mb-4">
               Schedule
             </h2>
-            <div>
+            <div className="md:max-lg:text-sm xs:max-md:text-sm">
               <span>Days:</span>
               {movie?.schedule?.days?.map((day) => (
-                <span className="text-xl tracking-wide">{day}</span>
+                <span className="lg:max-2xl:text-xl ms:max-lg:text-lg  tracking-wide">
+                  {day}
+                </span>
               ))}
               <br />
-              <span>Time</span>
+              <span>Time:</span>
               {movie?.schedule?.time}
             </div>
           </div>
