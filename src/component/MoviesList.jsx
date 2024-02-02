@@ -17,7 +17,7 @@ export default function MoviesList() {
   }, []);
   return (
     <>
-      <div className="bg-stone-100 mt-10 py-8 xs:max-md:pb-1 rounded-lg">
+      <div className="bg-stone-100 xs:max-md:mt-2 mt-10 py-8 xs:max-md:pb-1 rounded-lg">
         <h1 className="mb-8 text-center xs:max-md:text-2xl text-4xl">
           Recommended Movies
         </h1>

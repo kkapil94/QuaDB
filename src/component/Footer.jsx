@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-11/12 m-auto mt-8 mb-4 xs:max-md:px-4 px-16 py-8 xs:max-md:pt-4 bg-stone-100 rounded-lg">
+    <footer className="w-11/12 m-auto xs:max-md:mt-2 mt-8 mb-4 xs:max-md:px-4 px-16 py-8 xs:max-md:pt-4 bg-stone-100 rounded-lg">
       <div className="grid grid-cols-4 xs:max-md:gap-2 xs:max-md:grid-cols-2">
         <div>
           <h4 className="font-bold xs:max-md:text-lg text-2xl text-[#1F2544] tracking-wider">

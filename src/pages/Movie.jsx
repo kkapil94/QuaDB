@@ -16,7 +16,7 @@ export default function Movie() {
   }, []);
 
   return (
-    <div className="w-11/12 m-auto bg-stone-100 mt-10 xs:max-lg:py-0 py-8 rounded-lg">
+    <div className="w-11/12 m-auto bg-stone-100 xs:max-md:mt-2 mt-10 xs:max-lg:py-0 py-8 rounded-lg">
       <div className="flex xs:max-lg:flex-col items-center justify-between xs:max-lg:gap-4 gap-12">
         <div className="flex xs:max-lg:flex-col xs:max-lg:px-4 px-16 xs:max-lg:gap-8 gap-16 my-8">
           <div className="w-full">

@@ -8,7 +8,7 @@ export default function Navbar() {
           <div>
             <span>
               <img
-                className="object-conatin xs:max-md:w-14 w-28"
+                className="object-conatin xs:max-md:w-16 w-28"
                 src="/img/book_logo.png"
                 alt=""
               />
