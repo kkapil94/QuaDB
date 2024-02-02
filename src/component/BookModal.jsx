@@ -15,7 +15,7 @@ export default function BookModal({ closeModal, movie }) {
         onClick={closeModal}
         className="modal-wrapper fixed top-0 bottom-0 left-0 right-0 bg-black opacity-75"
       ></div>
-      <div className="fixed h-[80vh] xs:max-md:w-10/12 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/12 bg-stone-100 xs:max-md:p-2 p-8 rounded-2xl">
+      <div className="fixed xs:max-md:h-[70vh] h-[80vh] xs:max-md:w-10/12 z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/12 bg-stone-100 xs:max-md:p-2 p-8 rounded-2xl">
         <div className="flex justify-between xs:max-md:pt-1  pt-4">
           <span className="text-2xl text-[#1F2544]">Book Ticket</span>
           <button onClick={closeModal}>
